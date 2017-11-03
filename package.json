@@ -29,6 +29,11 @@
     "test-e2e": "cross-env NODE_ENV=test BABEL_DISABLE_CACHE=1 node --trace-warnings ./test/runTests.js e2e",
     "test-watch": "npm test -- --watch"
   },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
   "browserslist": "electron 1.6",
   "build": {
     "productName": "ElectronReact",
@@ -168,6 +173,7 @@
     "jsdom": "^11.0.0",
     "minimist": "^1.2.0",
     "node-sass": "^4.5.3",
+    "prettier": "^1.7.4",
     "react-addons-test-utils": "^15.6.0",
     "react-test-renderer": "^15.6.1",
     "redux-logger": "^3.0.6",
